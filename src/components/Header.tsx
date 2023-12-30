@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Header = () => {
+export const Header: React.FC = () => {
     return (
         <div className='text-white'>
             <div className='fixed top-0 w-full z-10'>
