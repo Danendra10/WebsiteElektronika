@@ -1,12 +1,14 @@
 import React from 'react';
-import './App.css';
+import { Header } from './components/Header';
+import { Home } from './pages/Home';
 
-function App() {
+const ExampleComponent: React.FC = () => {
   return (
-    <h1 className="text-3xl font-bold underline text-red-600">
-      Simple React Typescript Tailwind Sample
-    </h1>
+    <>
+      <Header />
+      <Home />
+    </>
   );
-}
+};
 
-export default App;
+export default ExampleComponent;
