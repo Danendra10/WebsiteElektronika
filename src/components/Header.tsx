@@ -9,9 +9,9 @@ export const Header = () => {
                         <img src="/favicon.png" alt="" className='w-20' />
                     </div>
                     <div className="flex justify-end items-center gap-x-10 text-xl px-5 my-auto">
-                        <p>Home</p>
-                        <p>Our Activities</p>
-                        <p>Our Teams</p>
+                        <p className='cursor-pointer hover:text-gray-400'>Home</p>
+                        <p className='cursor-pointer hover:text-gray-400'>Our Activities</p>
+                        <p className='cursor-pointer hover:text-gray-400'>Our Teams</p>
                     </div>
                 </div>
             </div>
