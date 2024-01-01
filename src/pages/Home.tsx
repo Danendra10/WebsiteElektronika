@@ -24,7 +24,7 @@ export const Home: React.FC = () => {
     return (
         <div key={key} className='relative w-screen h-screen'>
             {/* Black background */}
-            <div className="absolute inset-0 bg-black opacity-75" />
+            <div className="absolute inset-0 bg-black opacity-80" />
 
             {/* Image */}
             <img

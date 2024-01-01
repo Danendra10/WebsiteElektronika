@@ -17,17 +17,24 @@ export const OurActivities: React.FC = () => {
     }, [ourActivities])
 
     return (
-        <div className='w-full h-full p-20'>
+        <div className='w-full h-full p-20 bg-primary text-white'>
             {isLoading ? (
                 <Loading />
             ) : (
-                ourActivities.map((content, index) => {
-                    return (
-                        <div key={index}>
-                            {content.title}
-                        </div>
-                    )
-                })
+                <>
+                    <div className='flex justify-center uppercase font-bold text-xl'>
+                        Our Activities
+                    </div>
+                    <div className='mt-10 grid grid-cols-3'>
+                        {ourActivities.map((content, index) => {
+                            return (
+                                <div key={index} className='mx-auto'>
+                                    {content.title}
+                                </div>
+                            )
+                        })}
+                    </div>
+                </>
             )}
         </div>
     )
